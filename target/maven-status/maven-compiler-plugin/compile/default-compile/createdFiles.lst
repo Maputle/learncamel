@@ -1,0 +1,6 @@
+learncamel\config\RestConfiguration.class
+learncamel\domain\CreateUsersDAO.class
+learncamel\launcher\AppLauncher.class
+learncamel\domain\LoginDAO.class
+learncamel\routes\CreateUsersRoute.class
+learncamel\processors\CreateUsersProcessor.class

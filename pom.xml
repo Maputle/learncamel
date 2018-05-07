@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>learncamel</groupId>
+    <artifactId>learncamel</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-core -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-core</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+
+        <!-- camel-jms dependency -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jms</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <!-- Apache Active MQ Jars -->
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-client</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-pool</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.14.5</version>
+        </dependency>
+
+        <!-- Logging -->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+
+        <!-- DB Related Jars -->
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jdbc</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4.1212</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
+        <!-- Camel Sql Select -->
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-sql</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <!-- Datasource -->
+        <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <!-- Camel-http Jars -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-http-common -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http-common</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-http-starter -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http-starter</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+
+
+        <!--Parse Json Library-->
+
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+
+        <!-- Camel Test Dependencies -->
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test</artifactId>
+            <version>2.20.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Jetty -->
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-jetty93-adapter</artifactId>
+            <version>3.4.3.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jetty</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <!-- Restlet -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-restlet</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-mail</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-netty-http</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-xmljson</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-undertow</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>xom</groupId>
+            <artifactId>xom</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-xstream</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jackson</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-gson</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jdbc</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-sql</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1201-jdbc41</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-mongodb</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-swagger-java</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-servlet</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-stax</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http4</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-netty-http</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-cache</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jsonpath</artifactId>
+            <version>2.20.1</version>
+        </dependency>
+
+    </dependencies>
+
+
+    <!-- Main class in the Java Project -->
+
+    <build>
+        <plugins>
+
+            <!-- Maven Assembly Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>learncamel.launcher.AppLauncher</mainClass>
+                            <classpathPrefix>dependency-jars/</classpathPrefix>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <classpathScope>test</classpathScope>
+                    <mainClass>learncamel.launcher.AppLauncher</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals><goal>java</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.5.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.directory}/dependency-jars/
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
